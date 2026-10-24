@@ -359,6 +359,27 @@
   outline-offset: 2px;
 }
 
+.employee-edit-link {
+  padding: 9px 16px;
+  border: 1px solid #d6bbfb;
+  border-radius: 8px;
+  background: #fff;
+  color: #6941c6;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.employee-edit-link:hover {
+  background: #faf7ff;
+}
+
+.employee-edit-link:focus-visible {
+  outline: 3px solid rgb(158 119 237 / 35%);
+  outline-offset: 2px;
+}
+
 .employee-profile__details {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

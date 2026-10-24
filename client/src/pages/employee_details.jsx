@@ -108,6 +108,13 @@ function EmployeeDetails() {
           >
             {isEnabled ? 'Disable' : 'Enable'}
           </button>
+          <button
+            className="employee-edit-link"
+            type="button"
+            onClick={() => navigate(`/employees/${employee.id}/edit`)}
+          >
+            Edit details
+          </button>
         </div>
 
         <dl className="employee-profile__details">

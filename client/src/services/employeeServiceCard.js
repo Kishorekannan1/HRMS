@@ -21,3 +21,14 @@ export async function getEmployeeById(id) {
     id: data._id ?? data.id,
   }
 }
+
+export async function updateEmployee(id, employee) {
+  const { data } = await employeeApi.put(
+    `/employees/${encodeURIComponent(id)}`,
+    employee,
+  )
+  return {
+    ...data,
+    id: data._id ?? data.id,
+  }
+}
